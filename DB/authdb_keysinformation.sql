@@ -26,12 +26,12 @@ CREATE TABLE `keysinformation` (
   `ID` int NOT NULL AUTO_INCREMENT,
   `Login` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
   `Key` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
-  `CreateTime` date NOT NULL,
+  `CreateTime` int NOT NULL,
   PRIMARY KEY (`ID`),
   UNIQUE KEY `ID_UNIQUE` (`ID`),
   UNIQUE KEY `Login_UNIQUE` (`Login`),
   UNIQUE KEY `Key_UNIQUE` (`Key`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,7 +40,6 @@ CREATE TABLE `keysinformation` (
 
 LOCK TABLES `keysinformation` WRITE;
 /*!40000 ALTER TABLE `keysinformation` DISABLE KEYS */;
-INSERT INTO `keysinformation` VALUES (16,'Maxim','1596','2021-06-01'),(18,'Vlad','993','2021-06-01');
 /*!40000 ALTER TABLE `keysinformation` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -53,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-06-01 15:42:11
+-- Dump completed on 2021-06-02 12:34:51
