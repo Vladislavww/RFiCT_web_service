@@ -25,13 +25,13 @@ DROP TABLE IF EXISTS `keysinformation`;
 CREATE TABLE `keysinformation` (
   `ID` int NOT NULL AUTO_INCREMENT,
   `Login` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
-  `Key` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
+  `Key` varchar(145) COLLATE utf8_unicode_ci NOT NULL,
   `CreateTime` int NOT NULL,
   PRIMARY KEY (`ID`),
   UNIQUE KEY `ID_UNIQUE` (`ID`),
   UNIQUE KEY `Login_UNIQUE` (`Login`),
   UNIQUE KEY `Key_UNIQUE` (`Key`)
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=44 DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -52,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-06-02 12:34:51
+-- Dump completed on 2021-06-07 12:21:08

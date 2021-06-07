@@ -25,12 +25,12 @@ DROP TABLE IF EXISTS `usersinformation`;
 CREATE TABLE `usersinformation` (
   `ID` int NOT NULL AUTO_INCREMENT,
   `Login` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
-  `Password` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
+  `Password` varchar(145) COLLATE utf8_unicode_ci NOT NULL,
   `Email` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`ID`),
   UNIQUE KEY `ID_UNIQUE` (`ID`),
   UNIQUE KEY `Login_UNIQUE` (`Login`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39,7 +39,7 @@ CREATE TABLE `usersinformation` (
 
 LOCK TABLES `usersinformation` WRITE;
 /*!40000 ALTER TABLE `usersinformation` DISABLE KEYS */;
-INSERT INTO `usersinformation` VALUES (1,'Vlad','1234',NULL),(2,'Maxim','5555',NULL),(3,'Vlad12','1111',NULL),(5,'Vlad1233','sddd','asdasd'),(8,'v','12','12'),(11,'v1','sad','asd');
+INSERT INTO `usersinformation` VALUES (17,'VmxhZA==','E397E35F226ABB2F146AEB89BCFD81107CF4F1D11C37B13EA476A711','dmxhZDE4NzQyQGdtYWlsLmNvbQ==');
 /*!40000 ALTER TABLE `usersinformation` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -52,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-06-01 15:42:11
+-- Dump completed on 2021-06-07 12:21:08
